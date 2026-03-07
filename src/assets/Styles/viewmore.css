@@ -1,0 +1,141 @@
+.viewmore {
+  position: relative;
+  max-width: 1150px;
+  margin:40px auto;
+  padding: 60px 40px;
+  background: #D8D2C2;
+  border-radius: 32px;
+}
+
+.Exit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Exit:hover {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+}
+
+.viewmore .title h1 {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+}
+
+.viewmore-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.viewmore-con:hover .image img {
+  transform: scale(1.05);
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.details h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.rating {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-value {
+  background: #000;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.Reviews {
+  color: #888;
+  font-size: 14px;
+}
+
+.details .para {
+  line-height: 1.8;
+  color: #555;
+  max-width: 450px;
+}
+
+.details .para h4 {
+  color: black;
+}
+
+.buy-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .viewmore-con {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .details {
+    align-items: center;
+  }
+
+  .details .para {
+    max-width: 100%;
+  }
+
+  .viewmore .title h1 {
+    font-size: 28px;
+  }
+}

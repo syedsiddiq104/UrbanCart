@@ -1,0 +1,30 @@
+.password-box{
+  position: relative;
+  width: 100%;
+}
+
+.password-box input{
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+}
+
+.icon{
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.icon:hover{
+  color: black;
+  transform: translateY(-50%) scale(1.1);
+}
+
+input{
+  padding-right: 40px;
+}

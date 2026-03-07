@@ -1,0 +1,129 @@
+.myCart-con{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    /* border: 2px solid red; */
+
+   
+}
+.myCart-con  h3{
+  /* border: 1px solid red; */
+      margin-right: 130px;
+    }
+
+.myCart-con table  thead{
+    font-weight: 600;
+    background: #333;
+    color: white;
+}
+
+.myCart-con table tbody  td,
+.myCart-con table thead td{
+    text-align: center;
+    padding: 2vh;
+}
+
+
+.myCart-con table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.myCart-con table td{
+    border: 1px solid #383535;
+}
+
+.myCart-con .image img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.delete-icon{
+  cursor: pointer;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.delete-icon:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.quantity .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #111;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quantity button:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.quantity span {
+  min-width: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.empty-cart{
+  padding: 40px;
+  text-align: center;
+}
+
+.empty-cart h2{
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #444;
+}
+
+.shop-btn{
+  padding: 10px 20px;
+  font-size: large;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-btn:hover{
+  background: #333;
+  transform: scaleX(1.1);
+}
+
+.vline {
+  width: 2px;
+  height: 50px;
+  background: black;
+  border: none;
+}
